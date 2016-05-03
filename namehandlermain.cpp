@@ -31,7 +31,7 @@ int main()
 	
 	cout << "Please enter your name: ";
 	getline (std::cin, inputstr);
-	cout << "Hello " << inputstr << endl;
+//	cout << "Hello " << inputstr << endl;
 	NameHandle.setName(inputstr);
 	NameHandle.handle();  //Actually process the name
 	

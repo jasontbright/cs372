@@ -25,32 +25,23 @@ public:
 	void handle(const std::string & name);
 };
 
-// Hey, a name is capitalized, right?
+// Hey, a name is capitalized, right?  Makes sure the first letter is a capital
 class NameCheckCap: public NameHandler {
 public:
 	void handle(const std::string & name);
 };
 
+// Checks to see that something was actually entered.
 class NameCheckSize: public NameHandler {
 	public:
-	void handle(const std::string & name) {
-		if (name.size() == 0) {
-			cout << "Please enter your name next time!" << endl;
-		} else {
-			NameHandler::handle(name);
-		}
-	}
+	void handle(const std::string & name);
 };
 
+// Sees if my CS372 teacher put his name in...
+// I promise, no threatening letters to the president.
 class NameCheckTeacher: public NameHandler {
 	public:
-	void handle(const std::string & name) {
-		if (isNameMatch(name, "Glenn", "Chappell")) {
-			cout << "Hello Teacher!" << endl;
-		} else {
-			NameHandler::handle(name);
-		}
-	}
+	void handle(const std::string & name);
 };
 
 #endif //NAMEHANDLERSUBS_INCLUDE
