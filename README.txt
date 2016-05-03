@@ -14,6 +14,8 @@ Otherwise, it will complain that it doesn't know what to do.
 
 At this point, adding more functionality is merely writing code that recognizes the correct trigger and handles it.  Then put the object in the proper order for the chain.
 
+I must say, I actually like this - if I discover some 'bug' I just need to write a handler for it and put it in the list.  Done.
+
 Used research and code(heavily modified) from 
 https://sourcemaking.com/design_patterns/chain_of_responsibility/cpp/1
 http://www.dofactory.com/net/chain-of-responsibility-design-pattern
